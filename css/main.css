@@ -1,84 +1,269 @@
-CSS
-form {
-width: 400px;
-margin: 0 auto;
-padding: 20px;
-border: 1px solid #ccc;
+CSS 
+
+* {
+    box-sizing: border-box;
 }
 
-label {
-display: block;
-margin-bottom: 5px;
+html {
+    scroll-behavior: smooth;
 }
 
-input, select, textarea {
-width: 100%;
-padding: 8px;
-margin-bottom: 10px;
+a {
+    color: rebeccapurple;
+
+}
+
+a:hover {
+    color: rgb(220, 72, 218);
+}
+
+
+p {
+    background-color: lightblue;
+    padding: 20px;
+    }
+
+div {
+    max-width: 300px;
+    padding:20px;
+border: 2px solid black;
 box-sizing: border-box;
 }
 
-button {
-background-color: #181289;
-color: white;
-padding: 10px 15px;
-border: none;
-cursor: pointer;
-}
 
-footer{
-    align-items:center;
-}
-.error {
-color: red;
-}
 
-div {
-    width: 800px;
-    padding: 20px;
-    border: 2px solid black;
-    box-sizing: border-box; 
-    
+
+
+
+
+
+h1 {
+    text-align: center;
     }
 
-.container {
-    display: grid; grid-template-columns: 450px 1fr; 
-    }
+h2 {text-align: center;}
+
+h3 {text-align: center;}
 
 
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #f0f0f0;
-            padding: 10px;
-            }
-            .navbar ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            }
-            .navbar li {
-            margin-right: 20px;
-            }
+    form {
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        }
+        
+        
+        label {
+        display: block;
+        margin-bottom: 5px;
+        }
+        
+        
+        input, select, textarea {
+        width: 400px;
+        padding: 8px;
+        margin-bottom: 50px;
+        box-sizing: border-box;
+        }
+        
+        
+        button {
+        background-color: #181289;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        }
+        
+        
+        footer{
+           align-items:center;
+        }
+        .error {
+        color: red;
+        }
+        
+        
+        div {
+           width: 800px;
+           padding: 10px;
+           border: 2px solid black;
+           box-sizing: border-box;
+           height: 190px;
+          
+           }
+        
+        
+        .container {
+           display: grid; grid-template-columns: 450px 1fr;
+           }
+        
+        
+        
+        
+               .navbar {
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+                   background-color: #f0f0f0;
+                   padding: 10px;
+                   }
+                  
+        
+                  
+                   .card-container {
+                       display: flex;
+                       flex-wrap: wrap;
+                       justify-content: space-between;
+                       }
+                       .card {
+                       flex: 1 1 300px;
+                       margin: 10px;
+                       border: 1px solid
+                        #ccc;
+                       padding: 20px;
+                       }
+                      
+        
 
-            
-            .card-container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                }
-                .card {
-                flex: 1 1 300px; 
-                margin: 10px;
-                border: 1px solid
-                 #ccc;
-                padding: 20px;
-                }
-                .flex-container {
-                    display: flex;
+
+
+
+
+                      
+
+                    
+
+
+
+
+
+
+        
+
+
+                    .portfolio-banner {
+                        background-color: #fba6fb;
+                        padding: 8px;
+                        text-align: center;
+                    }
+                    
+                    .portfolio-header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    
+                    .portfolio-header-nav {
+                        display: flex;
+                        gap: 20px;
+                    }
+                    
+                    .portfolio-flex-row-1 {
+                        display: flex;
+                        gap: 20px;
+                        padding: 40px;
+                        flex-wrap: nowrap;
+                        max-width: 800px;
+                        margin-left: auto;
+                        margin-right: auto;
                     }
 
 
-                 
+                       @media (max-width:768px) {
+                        .portfolio-flex-row-1 {
+                            flex-direction: column;
+                        }
+                    
+                    }
+                    
+                    @media (min-width: 480px) {
+                        .portfolio-flex-row-2 {
+                            padding: 20px;
+                        }
+                    }
+                    .portfolio-flex-row-item-1 {
+                        flex: 60%;
+                    }
+                    
+                    .portfolio-flex-row-item-2 {
+                        flex: 40%;
+                    }
+
+
+                       .portfolio-main-container {
+                        display: flex;
+                        flex-direction: column;
+                        min-height: 100vh;
+                    }
+
+
+
+
+        
+                       main {
+                        flex: 1;
+                    }
+                    
+                    .logo {
+                        width: 125px;
+                    }
+                    
+                    .offcanvas-nav {
+                        position: relative; /* To position the menu within */
+                      }
+                    
+                      .menu {
+                        position: fixed; /* Fixed position for overlay effect */
+                        top: 164px;
+                        right: 0;
+                        height: 100%;
+                        width: 250px; /* Adjust width as needed */
+                        background-color: #fff;
+                        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+                        transform: translateX(100%); /* Initially slide out to the left */
+                        transition: transform 0.3s ease; /* Smooth transition */
+                      }
+                    
+                      @media (max-width: 768px) {
+                        .menu {
+                                flex-direction: column;
+                                padding: 20px;
+                            }
+                        }
+                    
+                      .menu.expanded {
+                        transform: translateX(0); /* Slide in when expanded */
+                      }
+                    
+                      .menu-toggle {
+                        /* Style the menu button as needed */
+                      }
+                    
+                      @media (min-width: 768px) {
+                      .offcanvas-nav {
+                          display: block; /* Show the full navigation on larger screens */
+                        }
+                      .menu {
+                          display: block; /* Ensure menu is visible on larger screens */
+                          position: static; /* Remove fixed positioning */
+                          width: auto;
+                          transform: none; /* No need for transitions */
+                          box-shadow: none;
+                        }
+                      .menu-toggle {
+                          display: none; /* Hide the toggle button on larger screens */
+                        }
+                      }
+                    
+
+
+footer {
+    background-color:green;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+            
