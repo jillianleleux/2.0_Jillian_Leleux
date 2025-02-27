@@ -1,71 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fun Portfolio</title>
+  <meta name="description" content="This a portfolio page.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+ 
+  
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="./img/stitchitback.jpg">
+  <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Fun Form</title>
 
-<form action="/submit_form" method="post">
-  <label for="firstName">First Name:</label>
-  <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name" autocomplete="given-name" autofocus>
+ 
+
+  <meta name="theme-color" content="#fafafa">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+ 
+  <body>
   
-  
-  <label for="lastName">Last Name:</label>
-  <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name" autocomplete="family-name">
-  
-  
-  
-  
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password" required placeholder="Enter your password">
-  
-  
-  
-  
-  <label for="email">Email Address:</label>
-  <input type="email" id="email" name="email" required placeholder="Enter your email" autocomplete="email">
-  
-  
-  
-  
-  <label for="quantity">Quantity:</label>
-  <input type="number" id="quantity" name="quantity" value="1" min="1" max="10" step="1">
-  
-  
-  
-  
-  <label for="phone">Phone Number:</label>
-  <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" autocomplete="tel">
-  
-  
-  
-  
-  <label for="website">Website:</label>
-  <input type="url" id="website" name="website" placeholder="Enter your website URL" autocomplete="url">
-  
-  
-  
-  
-  <label for="eventDate">Event Date:</label>
-  <input type="date" id="eventDate" name="eventDate" required>
-  
-  
-  
-  
-  <label for="appointmentTime">Appointment Time:</label>
-  <input type="time" id="appointmentTime" name="appointmentTime" required>
-  
-  
-  
-  
-  <label for="bookingDateTime">Booking Date and Time:</label>
-  <input type="datetime-local" id="bookingDateTime" name="bookingDateTime" required>
-  
-  
-  
-  
-  <input type="checkbox" id="terms" name="terms" required>
-  <label for="terms">I agree to the terms and conditions.</label>
-  
-  
-  <button type="submit">Submit</button>
-  </form>
+    <div class="portfolio-main-container">
+      <div class="portfolio">Feb. 18: Exhibition will be held in the Barnes Ogden Gallery at Louisiana State University</div>
+      <header class="portfolio-header">
+        <div>
+          <img class="logo" src="./img/hunty2.PNG" alt="">
+        </div>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="offcanvas-menu">Menu</button>
+        <nav id="offcanvas-menu" class="menu">
+          <a href="./index.html">Home</a>
+          <a href="./giraffes.html">About</a>
+          <a href="https://jillianleleux.myportfolio.com/work">Work</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </header>
+
+
+<main>
+  <h1 id="top" class="portfolio-heading">Contact</h1>
+ 
+  <form action="/submit_form" method="post">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name" autocomplete="given-name" autofocus>
+    
+    
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name" autocomplete="family-name">
+    
+    
+    
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required placeholder="Enter your password">
+    
+    
+    
+    
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email" autocomplete="email">
+    
+    
+    
+    
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" value="1" min="1" max="10" step="1">
+    
+    
+    
+    
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" autocomplete="tel">
+    
+    
+    
+    
+    <label for="website">Website:</label>
+    <input type="url" id="website" name="website" placeholder="Enter your website URL" autocomplete="url">
+    
+    
+    
+    
+    <label for="eventDate">Event Date:</label>
+    <input type="date" id="eventDate" name="eventDate" required>
+    
+    
+    
+    
+    <label for="appointmentTime">Appointment Time:</label>
+    <input type="time" id="appointmentTime" name="appointmentTime" required>
+    
+    
+    
+    
+    <label for="bookingDateTime">Booking Date and Time:</label>
+    <input type="datetime-local" id="bookingDateTime" name="bookingDateTime" required>
+    
+    
+    
+    
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the terms and conditions.</label>
+    
+    
+    <button type="submit">Submit</button>
+    </form>
+    
+</main>
+
+ <!-- This is my site's footer -->
+ <footer>
+  <span>Made with Github </span>
+  &copy; 2025 Jillian Leleux
+</footer>
+
+<script src="./js/main.js"></script>
+  </div>
+</body>
+
+</html>
+
   

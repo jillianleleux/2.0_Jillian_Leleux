@@ -7,12 +7,12 @@ html {
 }
 
 a {
-	color: rebeccapurple;
+	color: #004574;
 
 }
 
 a:hover {
-	color: rgb(220, 72, 218);
+	color: rgb(251, 46, 0);
 }
 
 
@@ -23,8 +23,7 @@ p {
 
 div {
 	padding: 20px;
-	border: 2px solid black;
-	box-sizing: border-box;
+	border: 2px solid rgb(35, 72, 48);
 }
 
 
@@ -45,7 +44,8 @@ form {
 	width: 400px;
 	margin: 0 auto;
 	padding: 20px;
-	border: 1px solid #ccc;
+	border: 1px solid #cccccc;
+	background-color: lightblue;
 }
 
 
@@ -66,7 +66,7 @@ textarea {
 
 
 button {
-	background-color: #181289;
+	background-color: #004574;
 	color: white;
 	padding: 10px 15px;
 	border: none;
@@ -81,19 +81,8 @@ footer {
 .error {
 	color: red;
 }
-
-
-div {
-
-	padding: 10px;
-	border: 2px solid black;
-	box-sizing: border-box;
-
-
-}
-
-
 .container {
+    max-width: 800px;
 	display: grid;
 	grid-template-columns: 450px 1fr;
 }
@@ -123,7 +112,7 @@ div {
 
 
 .portfolio-banner {
-	background-color: #fba6fb;
+	background-color: #090809;
 	padding: 8px;
 	text-align: center;
 }
@@ -143,7 +132,6 @@ div {
 	display: flex;
 	gap: 20px;
 	padding: 40px;
-	flex-wrap: nowrap;
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
@@ -179,10 +167,6 @@ div {
 }
 
 
-main {
-	flex: 1;
-}
-
 .logo {
 	width: 125px;
 }
@@ -193,13 +177,6 @@ main {
 }
 
 .menu {
-	position: fixed;
-	/* Fixed position for overlay effect */
-	top: 164px;
-	right: 0;
-	height: 100%;
-	width: 250px;
-	/* Adjust width as needed */
 	background-color: #fff;
 	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 	/* Add a subtle shadow */
@@ -211,7 +188,6 @@ main {
 
 @media (max-width: 768px) {
 	.menu {
-		flex-direction: column;
 		padding: 20px;
 	}
 }
@@ -250,7 +226,7 @@ main {
 
 
 footer {
-	background-color: green;
+	background-color: #004574;
 	color: white;
 	padding: 20px;
 	text-align: center;
