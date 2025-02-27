@@ -15,28 +15,65 @@ a:hover {
 	color: rgb(251, 46, 0);
 }
 
-
+.intro {font-family: "Atkinson Hyperlegible Mono", serif;
+	font-size: 15px;}
 p {
 	background-color: lightblue;
 	padding: 20px;
+	font-family: "Atkinson Hyperlegible Mono", serif;
+	
 }
-
+.connect {
+	background-color: #004574;
+	color: white;
+	padding: 10px 60px;
+	border: 2px solid lightblue;
+	cursor: pointer;
+}
 div {
 	padding: 20px;
 	border: 2px solid rgb(35, 72, 48);
 }
 
+.hero {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	}
+	.hero-content {
+	width: 90%; /* Takes up 90% of the .hero container */
+	margin: 0 auto; /* Center the content */
+	text-align: center;
+	}
+	@media (max-width: 768px) {
+	.hero-content {
+	width: 100%; /* Adjust width for smaller screens */
 
+	}
+	.hero h1 {
+		font-size: 2.5rem; /* Use relative units like rem */
+		line-height: 1.2;
+		}
+		@media (max-width: 768px) {
+		.hero h1 {
+		font-size: 2rem; /* Adjust font size for smaller screens */
+		}
+		}
+	}
 h1 {
 	text-align: center;
+	font-family: "Atkinson Hyperlegible Mono", serif;
 }
 
 h2 {
 	text-align: center;
+	font-family: "Atkinson Hyperlegible Mono", serif;
 }
 
 h3 {
 	text-align: center;
+	font-family: "Atkinson Hyperlegible Mono", serif;
 }
 
 
