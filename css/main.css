@@ -32,15 +32,15 @@ p {
 }
 div {
 	padding: 20px;
-	border: 2px solid rgb(35, 72, 48);
+	border: 2px solid rgb(80 95 163 / 26%);
 }
 
 .hero {
-	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 20px;
 	}
+	
 	.hero-content {
 	width: 90%; /* Takes up 90% of the .hero container */
 	margin: 0 auto; /* Center the content */
@@ -51,7 +51,7 @@ div {
 	width: 100%; /* Adjust width for smaller screens */
 
 	}
-	.hero h1 {
+	.hero {
 		font-size: 2.5rem; /* Use relative units like rem */
 		line-height: 1.2;
 		}
@@ -265,6 +265,6 @@ footer {
 footer {
 	background-color: #004574;
 	color: white;
-	padding: 20px;
+	padding: 12px;
 	text-align: center;
 }
