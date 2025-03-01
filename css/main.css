@@ -28,6 +28,7 @@ p {
 	color: white;
 	padding: 10px 60px;
 	cursor: pointer;
+	font-family: "Fuzzy Bubbles", serif;
 }
 div {
 	padding: 20px;
@@ -37,6 +38,7 @@ div {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 20px;
+	text-align: center;
 	}
 	
 	.hero-content {
@@ -55,7 +57,7 @@ div {
 		}
 		@media (max-width: 768px) {
 		.hero h1 {
-		font-size: 2rem; /* Adjust font size for smaller screens */
+		font-size: 2rem; 
 		}
 		}
 	}
@@ -106,6 +108,7 @@ button {
 	padding: 10px 15px;
 	border: none;
 	cursor: pointer;
+	font-family: "Fuzzy Bubbles", serif;
 }
 
 
@@ -206,7 +209,7 @@ footer {
 	max-width: 200px;
 }
 
-.offcanvas-nav {
+.offcanvas-menu {
 	position: static;
 	max-width: 800px;
 	/* To position the menu within */
@@ -226,6 +229,7 @@ position: static;
 max-width: 800px;
 margin: 0;	
 padding: 0;
+font-family: "Fuzzy Bubbles", serif;
 }
 
 @media (max-width: 768px) {
