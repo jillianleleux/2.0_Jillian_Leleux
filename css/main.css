@@ -1,6 +1,12 @@
 CSS * {
 	box-sizing: border-box;
 }
+body{
+	max-width: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
 
 html {
 	scroll-behavior: smooth;
@@ -19,9 +25,10 @@ a:hover {
 	font-size: 15px;}
 p {
 	background-color: lightblue;
-	padding: 20px;
+	padding: 15px;
 	font-family: "Atkinson Hyperlegible Mono", serif;
 	margin-bottom: 50px;
+	font-size: 14px;
 	
 }
 .connect {
@@ -37,72 +44,23 @@ div {
 	justify-content: space-around
 }
 
-.hero {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 20px;
-	text-align: center;
-	}
-	
-	.hero-content {
-	max-width: 90%; /* Takes up 90% of the .hero container */
-	margin: 0 auto; /* Center the content */
-	text-align: center;
-	}
 	@media (max-width: 768px) {
 	.hero-content {
 	max-width: 100%; /* Adjust width for smaller screens */
 
 	}
-	.hero {
-		font-size: 2.5rem; /* Use relative units like rem */
-		line-height: 1.2;
-		}
-		@media (max-width: 768px) {
-		.hero h1 {
-		font-size: 2rem; 
-		}
-		}
+	
 	}
-h1 {
+h1, h2, h3 {
 	text-align: center;
 	font-family: "Atkinson Hyperlegible Mono", serif;
-}
-
-h2 {
-	text-align: center;
-	font-family: "Atkinson Hyperlegible Mono", serif;
-}
-
-h3 {
-	text-align: center;
-	font-family: "Atkinson Hyperlegible Mono", serif;
-}
-
-
-form {
-	width: 400px;
-	margin: 0 auto;
-	padding: 20px;
-	border: 1px solid #cccccc;
-	background-color: lightblue;
-	margin-bottom: 80px;
+	font-size: 1.8rem ;
 }
 
 
 label {
 	display: block;
 	margin-bottom: 5px;
-}
-
-
-input,
-select,
-textarea {
-	max-width: 400px;
-	padding: 8px;
-	margin-bottom: 50px;
-	box-sizing: border-box;
 }
 
 
@@ -116,10 +74,6 @@ button {
 }
 
 
-footer {
-	align-items: center;
-}
-
 .error {
 	color: red;
 }
@@ -127,31 +81,93 @@ footer {
     max-width: 800px;
 	display: grid;
 	grid-template-columns: 450px 1fr;
+	flex-direction:column;
 }
 
-
+@media (max-width:768px){
 .navbar {
 	display: flex;
+	flex-direction: column;
+	text-align: center;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #f0f0f0;
 	padding: 10px;
-}
+}		
+		
+.hero {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	}
+	
+	.hero-content {
+	max-width: 90%; /* Takes up 90% of the .hero container */
+	margin: 0 auto; /* Center the content */
+	text-align: center;
+	}
 
 
-.card-container {
+.portfolio-flex-row-1 {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	gap: 20px;
+	padding: 10px;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
+.portfolio-flex-row-2 {
+		padding: 20px;
+	}
+
+
+input,
+select,
+textarea {
+	max-width: 100%;
+	padding: 8px;
+	margin-bottom: 50px;
+	box-sizing: border-box;
+}
+}
 .card {
 	flex: 1 1 300px;
 	margin: 10px;
 	border: 1px solid #ccc;
 	padding: 20px;
 }
+.menu {
+background-color: #fff;
+box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+/* Add a subtle shadow */
+transform: translateX(100vw);
+/* Initially slide out to the left */
+transition: transform 0.3s ease;
+/* Smooth transition */
+display: block;
+position: static;
+/* Ensure menu is visible on larger screens */
+max-width: 800px;	
+padding: 10px;
+font-family: "Fuzzy Bubbles", serif;
+}	
+form {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #cccccc;
+	background-color: lightblue;
+	margin-bottom: 80px;
+	margin-top: auto;
+}
 
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 
 .portfolio-banner {
 	background-color: #090809;
@@ -170,27 +186,10 @@ footer {
 	gap: 20px;
 }
 
-.portfolio-flex-row-1 {
-	display: flex;
-	gap: 20px;
-	padding: 40px;
-	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
-}
 
-
-@media (max-width:768px) {
-	.portfolio-flex-row-1 {
-		flex-direction: column;
-	}
-
-}
 
 @media (min-width: 480px) {
-	.portfolio-flex-row-2 {
-		padding: 20px;
-	}
+	
 }
 
 .portfolio-flex-row-item-1 {
@@ -209,7 +208,6 @@ footer {
 
 }
 
-
 .logo {
 	max-width: 300px;
 margin-bottom: 300px;
@@ -219,29 +217,6 @@ margin-bottom: 300px;
 	position: static;
 	max-width: 800px;
 	/* To position the menu within */
-}
-
-.menu {
-background-color: #fff;
-box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-/* Add a subtle shadow */
-transform: translateX(100vw);
-/* Initially slide out to the left */
-transition: transform 0.3s ease;
-/* Smooth transition */
-display: block;
-position: static;
-/* Ensure menu is visible on larger screens */
-max-width: 800px;
-margin: 0;	
-padding: 0;
-font-family: "Fuzzy Bubbles", serif;
-}
-
-@media (max-width: 768px) {
-	.menu {
-		padding: 20px;
-	}
 }
 
 .menu.expanded {
@@ -254,6 +229,6 @@ font-family: "Fuzzy Bubbles", serif;
 footer {
 	background-color: #004574;
 	color: white;
-	padding: 12px;
+	padding: 15px;
 	text-align: center;
 }
