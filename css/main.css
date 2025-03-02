@@ -84,7 +84,7 @@ button {
 	flex-direction:column;
 }
 
-@media (max-width:768px){
+@media (max-width:400px){
 .navbar {
 	display: flex;
 	flex-direction: column;
@@ -103,7 +103,7 @@ button {
 	}
 	
 	.hero-content {
-	max-width: 90%; /* Takes up 90% of the .hero container */
+	max-width: 80%; /* Takes up 90% of the .hero container */
 	margin: 0 auto; /* Center the content */
 	text-align: center;
 	}
